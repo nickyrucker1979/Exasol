@@ -1,0 +1,5 @@
+-- Initalize Exaplus and pass in the arguments below -c til end (inc sql file path)
+-- add the IP Address -c
+-- username -u
+-- add password -p
+"C:\Program Files (x86)\Exasol\EXASolution-6.0\EXAplus\exaplus" -c 10...........:8563 -u ...... -p ........ -f "C:\Users\ruckern\CU_Online_Marketing_Scripts\CanvasData_Production\canvas_import.sql"

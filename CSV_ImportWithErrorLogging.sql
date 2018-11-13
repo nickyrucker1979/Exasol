@@ -1,0 +1,4 @@
+IMPORT INTO CANVAS_DATA_STG.FILE_DIM
+FROM LOCAL CSV FILE '/Users/ruckern/CU_Online_Marketing_Scripts/Canvas_Data_Development/file_dim_test.csv' (1..27) -- columns 1-27
+COLUMN SEPARATOR = ',' COLUMN DELIMITER = '\t' NULL = '/N' SKIP = 1 --ROW SEPARATOR = 'CRLF'
+ERRORS INTO CANVAS_DATA_STG.ERROR_TABLE ('File Dim - 2018-06-15 11:20am') REJECT LIMIT UNLIMITED;
