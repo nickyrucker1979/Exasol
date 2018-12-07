@@ -10,7 +10,8 @@ flush statistics;  -- triggers the log server to write the profile or it will on
 alter session set profile = 'OFF';
 
 select * from exa_user_profile_last_day
-where session_id=current_session;
+where session_id=current_session
+and stmnt_id = current_statement-4;
 
 
 -----  option 2  -----
